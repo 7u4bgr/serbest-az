@@ -29,6 +29,7 @@
         font-family: "Inter", sans-serif;
       }
       .background {
+        padding-bottom: 30px;
       }
       .wrapper {
         width: 80%;
@@ -40,13 +41,15 @@
       }
       .text > h2 {
         font-family: "Inter", sans-serif;
-        font-size: 30px;
+        font-size: 20px;
       }
       .text > p {
         font-family: "Inter", sans-serif;
+        font-size: 12px;
       }
       .items {
         display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
         padding-top: 70px;
@@ -70,77 +73,168 @@
       }
       .material-symbols-outlined {
         font-variation-settings: "FILL" 0, "wght" 400, "GRAD" -25, "opsz" 24;
-        font-size: 96px; /* veya istediğiniz büyüklük */
-        color: #1b94ff;
+        font-size: 60px; /* veya istediğiniz büyüklük */
+        color: gray;
         fill: #fff;
         stroke-width: 1px;
         padding: 13px;
         border-radius: 50%;
       }
-      .item-text{
+      .item-text {
         display: flex;
         flex-direction: column;
         align-items: center;
         gap: 0;
       }
-      .item1.item1-control > h2 {
+      .item-text > h2 {
+        padding-top: 10px;
         font-family: "Inter", sans-serif;
         font-size: 18px;
       }
-      .item1 > .item1-control>.item-text > p {
+      .item-text > p {
         font-family: "Inter", sans-serif;
-        font-size: 14px;
-        width: 300px;
+        font-size: 12px;
+        width: 250px;
         text-align: center;
       }
-
-      .icon1 {
-        color: #ff0000;
-      }
-      .icon2 {
-        color: #ff0000d7;
-      }
-      .icon3 {
-        color: #ff000034;
-      }
-      .icon4 {
-        color: #00af0088;
-      }
-      .icon5 {
-        color: #00af00c7;
-      }
-      .icon6 {
-        color: #00af00f1;
-      }
-      .icon7 {
-        color: #00af0096;
-      }
-      .icon8 {
-        color: #00af003d;
-      }
-      .icon9 {
-        color: #0000ff8e;
-      }
-      .icon10 {
-        color: #0000ffbe;
+      .fa-solid {
+        font-size: 10px;
+        color: black;
       }
       .item1-circle {
         display: flex;
+        padding-top: 10px;
+        padding-bottom: 20px;
+        flex-direction: column;
         gap: 15px;
       }
       .red-border {
-        color: #ff0000;
-        border: 1px solid #ff0000;
+        border: 1px solid gray;
       }
 
       .green-border {
-        color: #00af00;
-        border: 1px solid #00af00;
+        border: 1px solid gray;
       }
 
       .blue-border {
-        color: #0000ff;
-        border: 1px solid #0000ff;
+        border: 1px solid gray;
+      }
+      .icon1 {
+        color: #000000;
+      }
+      .icon2 {
+        color: #000000c0;
+      }
+      .icon3 {
+        color: #00000073;
+      }
+      .icon4 {
+        color: #00000041;
+      }
+      .icon5 {
+        color: #0000001c;
+      }
+      .icon10 {
+        color: #000000;
+      }
+      .icon9 {
+        color: #000000c0;
+      }
+      .icon8 {
+        color: #00000073;
+      }
+      .icon7 {
+        color: #00000041;
+      }
+      .icon6 {
+        color: #0000001c;
+      }
+      .control-h2 > h2 {
+        padding-top: 20px;
+        font-size: 20px;
+      }
+      .check-icon {
+        color: #fff200;
+        font-size: 18px;
+      }
+      .control-icontexts {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+      .control-icontexts > p {
+        font-size: 12px;
+      }
+      .video{
+        margin-top: 40px;
+      }
+      .video>iframe{
+        width: 100%;
+        height: 30vh;
+      }
+      @media (min-width: 992px) {
+        .items {
+          display: flex;
+          align-items: flex-start;
+          flex-direction: row;
+          gap: 30px;
+        }
+        .item1-circle {
+          display: flex;
+          margin-top: 50px;
+          flex-direction: row;
+        }
+        .images > span {
+          font-size: 96px;
+        }
+        .text > h2 {
+          font-family: "Inter", sans-serif;
+          font-size: 30px;
+        }
+        .text > p {
+          font-family: "Inter", sans-serif;
+          font-size: 18px;
+        }
+        .item-text > h2 {
+          font-size: 22px;
+        }
+        .item-text > p {
+          font-size: 14px;
+          width: 300px;
+        }
+        .fa-solid {
+          font-size: 16px;
+        }
+        .control{
+          padding-top: 100px;
+          display: flex;
+          width: 80%;
+          margin: auto;
+          flex-direction: row;
+          align-items: center;
+          justify-content: space-between;
+        }
+        .control-h2 > h2 {
+          font-size: 30px;
+        }
+        .check-icon {
+          color: #fff200;
+          font-size: 22px;
+        }
+        .control-icontexts {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+        }
+        .control-icontexts > p {
+          font-size: 16px;
+         
+        }
+        .video>iframe{
+          width: 500px;
+         
+          margin-top: 10px;
+        }
       }
     </style>
 
@@ -154,7 +248,9 @@
           <div class="item1">
             <div class="item1-control">
               <div class="images">
-                <span class="material-symbols-outlined red-border"> ads_click </span>
+                <span class="material-symbols-outlined red-border">
+                  ads_click
+                </span>
               </div>
               <div class="item-text">
                 <h2>Выберите услугу</h2>
@@ -164,18 +260,20 @@
                 </p>
               </div>
             </div>
-        </div>
-        <div class="item1-circle">
-          <i class="icon1 fa-solid fa-circle"></i>
-          <i class="icon2 fa-solid fa-circle"></i>
-          <i class="icon3 fa-solid fa-circle"></i>
-          <i class="icon4 fa-solid fa-circle"></i>
-          <i class="icon5 fa-solid fa-circle"></i>
-        </div>
+          </div>
+          <div class="item1-circle">
+            <i class="icon1 fa-solid fa-circle"></i>
+            <i class="icon2 fa-solid fa-circle"></i>
+            <i class="icon3 fa-solid fa-circle"></i>
+            <i class="icon4 fa-solid fa-circle"></i>
+            <i class="icon5 fa-solid fa-circle"></i>
+          </div>
           <div class="item1">
             <div class="item1-control">
               <div class="images">
-                <span class="material-symbols-outlined green-border"> attach_money </span>
+                <span class="material-symbols-outlined green-border">
+                  attach_money
+                </span>
               </div>
               <div class="item-text">
                 <h2>Выберите услугу</h2>
@@ -185,18 +283,20 @@
                 </p>
               </div>
             </div>
-        </div>
-        <div class="item1-circle">
-          <i class="icon6 fa-solid fa-circle"></i>
-          <i class="icon7 fa-solid fa-circle"></i>
-          <i class="icon8 fa-solid fa-circle"></i>
-          <i class="icon9 fa-solid fa-circle"></i>
-          <i class="icon10 fa-solid fa-circle"></i>
-        </div>
+          </div>
+          <div class="item1-circle">
+            <i class="icon6 fa-solid fa-circle"></i>
+            <i class="icon7 fa-solid fa-circle"></i>
+            <i class="icon8 fa-solid fa-circle"></i>
+            <i class="icon9 fa-solid fa-circle"></i>
+            <i class="icon10 fa-solid fa-circle"></i>
+          </div>
           <div class="item1">
             <div class="item1-control">
               <div class="images">
-                <span class="material-symbols-outlined blue-border"> check </span>
+                <span class="material-symbols-outlined blue-border">
+                  check
+                </span>
               </div>
               <div class="item-text">
                 <h2>Выберите услугу</h2>
@@ -205,6 +305,39 @@
                   профессионалов.
                 </p>
               </div>
+            </div>
+          </div>
+        </div>
+        <div class="two-page">
+          <div class="control">
+            <div class="control-text">
+              <div class="control-h2">
+                <h2>Как решать задачи на Kwork</h2>
+              </div>
+              <div class="control-icontexts">
+                <i class="fa-solid fa-check check-icon"></i>
+                <p>Идеально подходит для бизнеса и для себя</p>
+              </div>
+              <div class="control-icontexts">
+                <i class="fa-solid fa-check check-icon"></i>
+                <p>Идеально подходит для бизнеса и для себя</p>
+              </div>
+              <div class="control-icontexts">
+                <i class="fa-solid fa-check check-icon"></i>
+                <p>Идеально подходит для бизнеса и для себя</p>
+              </div>
+            
+            
+            </div>
+            <div class="video">
+              <iframe
+                
+                src="https://www.youtube.com/embed/BC91XkS8xQU?si=du7h_tK-jTZk508F"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+              ></iframe>
             </div>
           </div>
         </div>
