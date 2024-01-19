@@ -21,7 +21,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <title>Document</title>
+    <title>Serbest-Az</title>
   </head>
   <body>
     <style>
@@ -168,9 +168,9 @@
       .video{
         margin-top: 40px;
       }
-      .video>iframe{
+      .video>video{
         width: 100%;
-        height: 30vh;
+    
       }
       @media (min-width: 992px) {
         .items {
@@ -230,9 +230,9 @@
           font-size: 16px;
          
         }
-        .video>iframe{
+        .video>video{
           width: 500px;
-         
+          border: none;
           margin-top: 10px;
         }
       }
@@ -330,14 +330,9 @@
             
             </div>
             <div class="video">
-              <iframe
-                
-                src="https://www.youtube.com/embed/BC91XkS8xQU?si=du7h_tK-jTZk508F"
-                title="YouTube video player"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowfullscreen
-              ></iframe>
+              <video class="video-control" controls>
+                <source src="./Valhalla calling - Miracle of sound (Sub Español - Lyrics).mp4" type="video/mp4">
+              </video>
             </div>
           </div>
         </div>
